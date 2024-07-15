@@ -58,6 +58,7 @@
     <Analyzer Include="F:\软件\unity\2022.3.0f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AsepriteAnimationWorkflow\Editor\BlendFunc.cs" />
     <Compile Include="Assets\PlayMaker\Actions\SceneManager\Editor\LoadSceneCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Editor\FsmLogWindow.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Tween\Editor\TweenScaleEditor.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorTargetActionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Editor\FsmTemplate.cs" />
     <Compile Include="Assets\PlayMaker\Editor\FsmTemplateWindow.cs" />
+    <Compile Include="Assets\AsepriteAnimationWorkflow\Editor\AsepriteImporterEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Physics\Editor\RaycastAllEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Tween\Editor\TweenQuaternionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Quaternion\Editor\QuaternionSlerpCustomEditor.cs" />
@@ -109,13 +111,18 @@
     <Compile Include="Assets\PlayMaker\Actions\SceneManager\Editor\GetSceneRootGameObjectsCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Editor\FsmEditorWindow.cs" />
     <Compile Include="Assets\PlayMaker\Editor\BaseGuidedTourWindow.cs" />
+    <Compile Include="Assets\AsepriteAnimationWorkflow\Editor\Aseprite.cs" />
     <Compile Include="Assets\PlayMaker\Actions\SceneManager\Editor\GetSceneBuildIndexCustomEditor.cs" />
+    <Compile Include="Assets\AsepriteAnimationWorkflow\Editor\Frame.cs" />
+    <Compile Include="Assets\AsepriteAnimationWorkflow\Editor\Texture2DExtensions.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorBoolActionEditor.cs" />
+    <Compile Include="Assets\AsepriteAnimationWorkflow\Editor\AsepriteImporterSettings.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Physics\Editor\FindOverlapsEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Quaternion\Editor\QuaternionLowPassFilterCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Editor\ReportWindow.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorSpeedActionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorCurrentStateInfoIsNameActionEditor.cs" />
+    <Compile Include="Assets\AsepriteAnimationWorkflow\Editor\IndexedPalette.cs" />
     <Compile Include="Assets\PlayMaker\Actions\SceneManager\Editor\LoadSceneAsynchCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Editor\CallMethodEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorCurrentStateInfoActionEditor.cs" />
@@ -127,11 +134,15 @@
     <Compile Include="Assets\PlayMaker\Actions\Quaternion\Editor\GetQuaternionMultipliedByVectorCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Editor\PlayMakerUpgradeTools.cs" />
     <Compile Include="Assets\PlayMaker\Editor\AboutWindow.cs" />
+    <Compile Include="Assets\AsepriteAnimationWorkflow\Editor\Header.cs" />
+    <Compile Include="Assets\AsepriteAnimationWorkflow\Editor\AsepriteEnums.cs" />
     <Compile Include="Assets\PlayMaker\Editor\EditorStartupPrefs.cs" />
+    <Compile Include="Assets\AsepriteAnimationWorkflow\Editor\AsepriteImporter.cs" />
     <Compile Include="Assets\PlayMaker\Actions\SceneManager\Editor\GetScenePathCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Debug\Editor\CommentEditor.cs" />
     <Compile Include="Assets\PlayMaker\Editor\PlayMakerDefines.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorBodyActionEditor.cs" />
+    <Compile Include="Assets\AsepriteAnimationWorkflow\Editor\Cel.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\SetAnimatorBoolActionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Editor\FsmEventsWindow.cs" />
     <Compile Include="Assets\PlayMaker\Actions\SceneManager\Editor\GetSceneIsValidCustomEditor.cs" />
@@ -141,12 +152,15 @@
     <Compile Include="Assets\PlayMaker\Actions\Quaternion\Editor\QuaternionLerpCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Editor\FsmSelectorWindow.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Tween\Editor\TweenRotationEditor.cs" />
+    <Compile Include="Assets\AsepriteAnimationWorkflow\Editor\AsepriteLoader.cs" />
     <Compile Include="Assets\PlayMaker\Actions\StateMachine\Editor\BlockEventsEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Editor\RunFsmEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\BaseClasses\OnAnimatorUpdateActionEditorBase.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorCurrentTransitionInfoIsNameActionEditor.cs" />
+    <Compile Include="Assets\AsepriteAnimationWorkflow\Editor\ColorExtensions.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Tween\Editor\TweenUiSizeEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\SetAnimatorIntActionEditor.cs" />
+    <Compile Include="Assets\AsepriteAnimationWorkflow\Editor\Layer.cs" />
     <Compile Include="Assets\PlayMaker\Actions\SceneManager\Editor\UnLoadSceneAsynchCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Editor\LookAtActionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Editor\PlayMakerAutoUpdater.cs" />
@@ -170,15 +184,18 @@
     <Compile Include="Assets\PlayMaker\Editor\PlayMakerGUIInspector.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Quaternion\Editor\QuaternionAngleAxisCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorNextStateInfoActionEditor.cs" />
+    <Compile Include="Assets\AsepriteAnimationWorkflow\Editor\FrameTag.cs" />
     <Compile Include="Assets\PlayMaker\Editor\FsmComponentInspector.cs" />
     <Compile Include="Assets\PlayMaker\Editor\FsmErrorWindow.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Tween\Editor\TweenPunchEditor.cs" />
+    <Compile Include="Assets\AsepriteAnimationWorkflow\Editor\StreamExtensions.cs" />
     <Compile Include="Assets\PlayMaker\Editor\ContextToolWindow.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Tween\Editor\TweenPropertyEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorLayerWeightActionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Tween\Editor\TweenUiPositionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorCurrentTransitionInfoActionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Tween\Editor\TweenFadeEditor.cs" />
+    <Compile Include="Assets\AsepriteAnimationWorkflow\Editor\AsepriteAssets.cs" />
     <Compile Include="Assets\PlayMaker\Editor\PlayMakerGlobalsInspector.cs" />
   </ItemGroup>
   <ItemGroup>
