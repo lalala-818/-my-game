@@ -150,8 +150,8 @@
     <Compile Include="Assets\PlayMaker\Actions\SceneManager\Editor\UnLoadSceneAsynchCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Editor\LookAtActionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Editor\PlayMakerAutoUpdater.cs" />
-    <Compile Include="Assets\PlayMaker\Actions\SceneManager\Editor\MergeScenesCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorDeltaActionEditor.cs" />
+    <Compile Include="Assets\PlayMaker\Actions\SceneManager\Editor\MergeScenesCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Editor\PlayMakerGuidedTour.cs" />
     <Compile Include="Assets\PlayMaker\Actions\SceneManager\Editor\GetSceneRootCountCustomEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorIsMatchingTargetActionEditor.cs" />
@@ -469,8 +469,17 @@
     <Reference Include="Unity.Collections.LowLevel.ILSupport">
       <HintPath>Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
     </Reference>
+    <Reference Include="PlayMakerEditor">
+      <HintPath>Assets\PlayMaker\Editor\PlayMakerEditor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="ConditionalExpression">
+      <HintPath>Assets\PlayMaker\ConditionalExpression.dll</HintPath>
+    </Reference>
+    <Reference Include="ConditionalExpressionEditor">
+      <HintPath>Assets\PlayMaker\Editor\ConditionalExpressionEditor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
@@ -481,6 +490,12 @@
     <Reference Include="Unity.VisualScripting.IonicZip">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
     </Reference>
+    <Reference Include="PlayMaker">
+      <HintPath>Assets\Plugins\PlayMaker\PlayMaker.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayMakerEditorResources">
+      <HintPath>Assets\PlayMaker\Editor\PlayMakerEditorResources.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
@@ -489,21 +504,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="ConditionalExpression">
-      <HintPath>Assets\PlayMaker\ConditionalExpression.dll</HintPath>
-    </Reference>
-    <Reference Include="PlayMaker">
-      <HintPath>Assets\Plugins\PlayMaker\PlayMaker.dll</HintPath>
-    </Reference>
-    <Reference Include="PlayMakerEditorResources">
-      <HintPath>Assets\PlayMaker\Editor\PlayMakerEditorResources.dll</HintPath>
-    </Reference>
-    <Reference Include="ConditionalExpressionEditor">
-      <HintPath>Assets\PlayMaker\Editor\ConditionalExpressionEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="PlayMakerEditor">
-      <HintPath>Assets\PlayMaker\Editor\PlayMakerEditor.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
