@@ -24,7 +24,7 @@ public class move : MonoBehaviour
         transform.Translate(movement * moveSpeed * Time.deltaTime);
 
         animator.SetFloat("Speed", movement.sqrMagnitude);
-        animator.SetFloat("Horizontal", moveX);
+        animator.SetFloat("Horizontal", moveX); 
         animator.SetFloat("Vertical", moveY);
     }
 }
