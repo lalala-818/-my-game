@@ -207,6 +207,7 @@
     <Compile Include="Assets\PlayMaker\Actions\GUILayout\GUILayoutToggle.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Physics\GetCollisionInfo.cs" />
     <Compile Include="Assets\PlayMaker\Actions\VideoPlayer\VideoPlayerGetIsPrepared.cs" />
+    <Compile Include="Assets\script\TreeHealth.cs" />
     <Compile Include="Assets\PlayMaker\Actions\VideoPlayer\VideoPlayerLoopPointReachedEvent.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Vector2\GetVector2Length.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Input\GetButtonUp.cs" />
@@ -813,6 +814,7 @@
     <Compile Include="Assets\PlayMaker\Actions\Vector3\SetVector3Value.cs" />
     <Compile Include="Assets\PlayMaker\Actions\VideoPlayer\VideoPlayerSetSendFrameReadyEvents.cs" />
     <Compile Include="Assets\PlayMaker\Actions\ScriptControl\AddScript.cs" />
+    <Compile Include="Assets\script\player attack.cs" />
     <Compile Include="Assets\PlayMaker\Actions\StateMachine\GetFsmTexture.cs" />
     <Compile Include="Assets\PlayMaker\Actions\UI\UiGraphicGetColor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\GetAnimatorCurrentTransitionInfoIsUserName.cs" />
