@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - wood
+  - pickedupitem
   layers:
   - Default
   - TransparentFX
@@ -52,4 +54,7 @@ TagManager:
     locked: 0
   - name: tree
     uniqueID: 3711649999
+    locked: 0
+  - name: thing
+    uniqueID: 2858803585
     locked: 0

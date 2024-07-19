@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class move : MonoBehaviour
 {
-    public float moveSpeed = 5f; // 移动速度
+    public float moveSpeed = 5f;
+    private Rigidbody2D rb;
     Animator animator;
     
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
@@ -20,8 +22,8 @@ public class move : MonoBehaviour
         float moveY = Input.GetAxis("Vertical");
 
         // 创建移动向量
-        Vector3 movement = new Vector3(moveX, moveY, 0f);
-        transform.Translate(movement * moveSpeed * Time.deltaTime);
+        Vector2 movement = new Vector2(moveX, moveY);
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
         animator.SetFloat("Speed", movement.sqrMagnitude);
         animator.SetFloat("Horizontal", moveX); 
