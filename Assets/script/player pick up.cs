@@ -22,7 +22,6 @@ public class pickup : MonoBehaviour
     void PickupItem(GameObject item)
     {
         pickedupitem = item;
-        item.SetActive(false);
     }   
 
     // Start is called before the first frame update
