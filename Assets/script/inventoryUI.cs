@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class InventoryUI : MonoBehaviour
 {
     public Inventory inventory;
-    public GameObject itemUIPrefab;
+    public GameObject itemSlotPrefab;
     public Transform itemParent;
     // Start is called before the first frame update
     void Start()
@@ -22,14 +22,14 @@ public class InventoryUI : MonoBehaviour
         }
         foreach (Item item in inventory.items)
         {
-            GameObject itemUI = Instantiate(itemUIPrefab, itemParent);
-            itemUI.GetComponent<Image>().sprite = item.itemIcon;
+            GameObject itemUI = Instantiate(itemSlotPrefab, itemParent);
+            Image Icon = itemUI.transform.Find("Icon").GetComponent<Image>();
+            Icon.sprite = item.itemIcon;
+            Text text = itemUI.transform.Find("Quantity").GetComponent<Text>();
+            text.text = item.itemQuantity.ToString();
         }
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

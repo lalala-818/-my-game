@@ -6,7 +6,8 @@ using UnityEngine;
 public class Item
 {
     public string itemName;
-    public int itemID;
+    public int itemId;
     public Sprite itemIcon;
     public string itemDescription;
+    public int itemQuantity;
 }
