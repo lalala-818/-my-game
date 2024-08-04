@@ -12,7 +12,6 @@ public class playerattack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-         Debug.Log("Tree Layer Mask Value: " + treeLayer.value);
     }
 
     // Update is called once per frame
