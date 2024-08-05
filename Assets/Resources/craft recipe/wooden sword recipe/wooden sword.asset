@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3dca65b92e8a141bac9cf5817fd69b, type: 3}
   m_Name: wooden sword
   m_EditorClassIdentifier: 
+  recipeName: wooden sword
   resultItem: {fileID: 11400000, guid: b1f53fc762037b141b02442514638111, type: 2}
   resultAmount: 1
   ingredients:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 17cff830ca3c6c442b4ee389ae41512a, type: 2}

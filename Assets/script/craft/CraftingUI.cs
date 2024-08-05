@@ -10,22 +10,23 @@ public class CraftingUI : MonoBehaviour
     public Button craftButton;
     private List<GameObject> craftingSlots = new List<GameObject>();
     public List<CraftingRecipe> recipes = new List<CraftingRecipe>();
-    void woodenSwordRecipe()
-    {
-        CraftingRecipe recipe = new CraftingRecipe();
-        recipe.resultItem.itemName = "Wooden Sword";
-        recipe.resultAmount = 1;
-        recipes.Add(recipe);
-    }
     void Start()
     {
-        foreach (var recipe in recipes)
+        foreach (CraftingRecipe recipe in recipeRepository.instance.recipeDictionary.Values)
         {
-            GameObject Slot = Instantiate(craftingSlotPrefab, craftingSlotsParent);
-            Slot.GetComponent<CraftingSlot>().SetRecipe(recipe);
-            craftingSlots.Add(Slot);
+            Debug.Log(recipe.name);
+            GameObject craftingSlot = Instantiate(craftingSlotPrefab, craftingSlotsParent);
+            Text nameText = craftingSlot.transform.Find("Item").GetComponent<Text>();
+            nameText.text = recipe.name;
+            Image iconImage = craftingSlot.transform.Find("Icon").GetComponent<Image>();
+            iconImage.sprite = recipe.resultItem.itemIcon;
+            Text amountText = craftingSlot.transform.Find("Quantity").GetComponent<Text>();
+            amountText.text = recipe.resultAmount.ToString();
+            craftingSlot.GetComponent<CraftingSlot>().SetRecipe(recipe);
+            craftingSlots.Add(craftingSlot);
+            craftButton.onClick.AddListener(CraftItem);
         }
-        craftButton.onClick.AddListener(CraftItem);
+
     }
 
     void CraftItem()

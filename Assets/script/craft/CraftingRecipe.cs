@@ -6,6 +6,7 @@ using static UnityEditor.Progress;
 [System.Serializable]
 public class CraftingRecipe :ScriptableObject
 {
+    public string recipeName;
     public Item resultItem;
     public int resultAmount;
     public List<CraftingIngredient> ingredients;

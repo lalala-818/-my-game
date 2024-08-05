@@ -107,6 +107,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\script\craft\ingredient.cs" />
     <Compile Include="Assets\script\inventory\Inventory.cs" />
+    <Compile Include="Assets\recipeRepository.cs" />
     <Compile Include="Assets\script\craft\CraftingUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
   </ItemGroup>
