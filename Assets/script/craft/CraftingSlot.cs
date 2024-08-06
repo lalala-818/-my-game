@@ -9,7 +9,7 @@ public class CraftingSlot : MonoBehaviour
     public GameObject ingredientSlotPrefab;
     public Transform ingredientParent;
     public CraftingRecipe recipe;
-    public bool isSelected{ get; set; }
+    public bool isSelected = true;
     
 
     

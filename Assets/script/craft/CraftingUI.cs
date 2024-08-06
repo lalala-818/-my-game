@@ -33,9 +33,11 @@ public class CraftingUI : MonoBehaviour
     {
         foreach (var slot in craftingSlots)
         {
+            Debug.Log(slot.name);
             CraftingSlot craftingSlot = slot.GetComponent<CraftingSlot>();
             if (craftingSlot.isSelected)
             {
+                Debug.Log("isSelected");
                 CraftingRecipe recipe = craftingSlot.GetRecipe();
                 bool canCraft = true;
 
@@ -52,15 +54,19 @@ public class CraftingUI : MonoBehaviour
                 {
                     foreach (var ingredient in recipe.ingredients)
                     {
-                        Inventory.instance.RemoveItem(ingredient.item.itemId, ingredient.item,ingredient.amount);
+                        Inventory.instance.RemoveItem(ingredient.item.itemId, ingredient.item, ingredient.amount);
                     }
 
-                    Inventory.instance.AddItem(recipe.resultItem.itemId, recipe.resultItem,recipe.resultAmount);
+                    Inventory.instance.AddItem(recipe.resultItem.itemId, recipe.resultItem, recipe.resultAmount);
                 }
                 else
                 {
                     Debug.Log("Not enough materials to craft this item.");
                 }
+            }
+            else
+            {
+                Debug.Log("not isSelected");
             }
         }
     }
